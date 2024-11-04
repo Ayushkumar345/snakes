@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    margin: 20px auto; /* Center the logo */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Crop the image if it overflows */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 204, 0, 0.2); /* Optional: Add a background color */
+}
+
+#logo {
+    width: 100%; /* Fill the circular container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#gameTitle {
+    color: #ffcc00;
+    font-size: 3em;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 10px;
+}
+
+#instructions {
+    color: #ffcc00;
+    margin: 20px 0;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 15px;
+    background: rgba(255, 204, 0, 0.1);
+    border-radius: 10px;
+}
+
+#scoreDisplay {
+    font-size: 2em;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+#restartBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #ffcc00;
+    color: #222;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#restartBtn:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="gameTitle">🐍 Ultimate Snake Game 🐍</h1>
+        <div id="instructions">
+            <h3>How to Play:</h3>
+            <p>Use the arrow keys on your keyboard to move the snake.</p>
+            <p>Eat the food to grow longer and score points!</p>
+            <p>Avoid running into yourself or the walls!</p>
+            <p><em>Instructions are for computers and laptops only.</em></p>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <h2 id="scoreDisplay">Score: 0</h2>
+        <button id="restartBtn" onclick="restartGame()">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
